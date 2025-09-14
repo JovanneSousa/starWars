@@ -1,0 +1,22 @@
+@use 'hero';
+@use 'story';
+@use 'person';
+@use 'variaveis';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+    color: variaveis.$corText;
+}
+
+body {
+    background-color: variaveis.$background;
+}
+
+.ly {
+    color: rgb(255, 235, 178);
+}

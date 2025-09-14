@@ -1,13 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Wars</title>
-    <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
 </head>
+
 <body>
-    
+    <section class="hero">
+
+        <div class="background"></div>
+        <div class="overlay"></div>
+
+        <!-- {/* Content */} -->
+        <div class="container">
+            <div class="fade-in">
+                <h1 class="tittle">
+                    STAR WARS
+                </h1>
+                <h2 class="episode ly">
+                    EPISÓDIO III
+                </h2>
+                <h3 class="sub-tittle">
+                    A VINGANÇA DOS SITH
+                </h3>
+
+                <p class="description">
+                    A República cai. O Império nasce. Um herói se torna o maior vilão da galáxia.
+                    Descubra a história épica que mudou o destino de uma galáxia muito, muito distante...
+                </p>
+
+                <div class="button-container">
+                    <a href="#story" class="button hero-button">Explorar a História</a>
+                    <a href="#person" class="button imperial-button">Conhecer os Personagens</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="story-section" id="story">
+        <div class="container">
+            <div class="text-center intro animate-fade-in">
+                <h2 class="title">
+                    A História Épica
+                </h2>
+                <p class="subtitle">
+                    Acompanhe os eventos que levaram à queda da República Galáctica e ao nascimento do Império
+                </p>
+            </div>
+
+            <div class="events-grid">
+                <div class="card slide-left">
+                    <div class="card-header">
+                        <div class="header-top">
+                            <span class="timeline">19 BBY</span>
+                            <div class="event-number">1</div>
+                        </div>
+                        <h3 class="card-title">A Guerra dos Clones</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Três anos após o início da Guerra dos Clones, a República está em crise. O General Grievous
+                            lidera um ataque devastador em Coruscant e sequestra o Chanceler Palpatine.</p>
+                    </div>
+                </div>
+
+                <div class="card slide-right">
+                    <div class="card-header">
+                        <div class="header-top">
+                            <span class="timeline">19 BBY</span>
+                            <div class="event-number">2</div>
+                        </div>
+                        <h3 class="card-title">A Queda de Anakin</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Atormentado por visões da morte de Padmé, Anakin busca desesperadamente o poder para
+                            salvá-la. Palpatine revela ser um Senhor Sith e seduz Anakin para o lado sombrio.</p>
+                    </div>
+                </div>
+
+                <div class="card slide-left">
+                    <div class="card-header">
+                        <div class="header-top">
+                            <span class="timeline">19 BBY</span>
+                            <div class="event-number">3</div>
+                        </div>
+                        <h3 class="card-title">A Ordem 66</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Palpatine executa a Ordem 66, comandando os clones a eliminar todos os Jedi. O Império
+                            Galáctico nasce das cinzas da República, com Palpatine como Imperador.</p>
+                    </div>
+                </div>
+
+                <div class="card slide-right">
+                    <div class="card-header">
+                        <div class="header-top">
+                            <span class="timeline">19 BBY</span>
+                            <div class="event-number">4</div>
+                        </div>
+                        <h3 class="card-title">O Nascimento de Vader</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Atormentado por visões da morte de Padmé, Anakin busca desesperadamente o poder para
+                            salvá-la. Palpatine revela ser um Senhor Sith e seduz Anakin para o lado sombrio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-container">
+                <div class="quote-box">
+                    <h3 class="quote-title">
+                        "Do your worst. I have already won."
+                    </h3>
+                    <p class="quote-subtitle">
+                        — Darth Sidious
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="characters-section" id="person">
+        <div class="container">
+            <div class="intro text-center animate-fade-in">
+                <h2 class="title">Personagens Épicos</h2>
+                <p class="subtitle">Conheça os heróis e vilões que definiram o destino da galáxia</p>
+            </div>
+
+            <div class="characters-grid">
+                <!-- Anakin -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="flex">
+                            <span class="badge empire">República → Império</span>
+                            <div class="lightsaber blue-red">⚔️</div>
+                        </div>
+                        <h3 class="card-title">Anakin Skywalker / Darth Vader</h3>
+                        <p class="role">Cavaleiro Jedi → Senhor Sith</p>
+                    </div>
+                    <div class="card-content">
+                        <p class="description">
+                            O Escolhido que se tornou o maior vilão da galáxia. Seduzido pelo lado sombrio em sua
+                            tentativa desesperada de salvar Padmé.
+                        </p>
+                        <div class="abilities">
+                            <h4>Habilidades:</h4>
+                            <span class="ability">Pilotagem</span>
+                            <span class="ability">Força</span>
+                            <span class="ability">Combate com sabre de luz</span>
+                            <span class="ability">Engenharia</span>
+                        </div>
+                        <div class="lightsaber-info">
+                            <span>Sabre de Luz:</span>
+                            <span class="lightsaber blue-red">Azul → Vermelho</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Obi-Wan -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="flex">
+                            <span class="badge republic">República</span>
+                            <div class="lightsaber blue">⚔️</div>
+                        </div>
+                        <h3 class="card-title">Obi-Wan Kenobi</h3>
+                        <p class="role">Mestre Jedi</p>
+                    </div>
+                    <div class="card-content">
+                        <p class="description">
+                            Mestre e mentor de Anakin. Forçado a enfrentar seu antigo Padawan em um duelo épico em
+                            Mustafar.
+                        </p>
+                        <div class="abilities">
+                            <h4>Habilidades:</h4>
+                            <span class="ability">Mestre em combate</span>
+                            <span class="ability">Força</span>
+                            <span class="ability">Diplomacia</span><br>
+                            <span class="ability">Estratégia</span>
+                        </div>
+                        <div class="lightsaber-info">
+                            <span>Sabre de Luz:</span>
+                            <span class="lightsaber blue">Azul</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Palpatine -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="flex">
+                            <span class="badge empire">República → Império</span>
+                        <div class="lightsaber red">⚔️</div>
+                        </div>
+                        <h3 class="card-title">Sheev Palpatine / Darth Sidious</h3>
+                        <p class="role">Chanceler → Imperador / Senhor Sith</p>
+                    </div>
+                    <div class="card-content">
+                        <p class="description">
+                            O arquiteto da queda da República e dos Jedi. Manipulou a guerra para consolidar seu poder
+                            absoluto.
+                        </p>
+                        <div class="abilities">
+                            <h4>Habilidades:</h4>
+                            <span class="ability">Manipulação</span>
+                            <span class="ability">Força Sombria</span>
+                            <span class="ability">Relâmpagos da Força</span>
+                            <span class="ability">Política</span>
+                        </div>
+                        <div class="lightsaber-info">
+                            <span>Sabre de Luz:</span>
+                            <span class="lightsaber red">Vermelho</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Padmé -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="flex">
+                            <span class="badge republic">República</span>
+                            <div class="lightsaber none">⚔️</div>
+                        </div>
+                        <h3 class="card-title">Padmé Amidala</h3>
+                        <p class="role">Senadora</p>
+                    </div>
+                    <div class="card-content">
+                        <p class="description">
+                            Senadora de Naboo e esposa secreta de Anakin. Lutou pela democracia até o fim, presenciando
+                            o nascimento do Império.
+                        </p>
+                        <div class="abilities">
+                            <h4>Habilidades:</h4>
+                            <span class="ability">Diplomacia</span>
+                            <span class="ability">Liderança</span>
+                            <span class="ability">Combate</span>
+                            <span class="ability">Política</span>
+                        </div>
+                        <div class="lightsaber-info">
+                            <span>Sabre de Luz:</span>
+                            <span class="lightsaber none">Nenhum</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mace Windu -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="flex">
+                            <span class="badge republic">República</span>
+                            <div class="lightsaber purple">⚔️</div>
+                        </div>
+                        <h3 class="card-title">Mace Windu</h3>
+                        <p class="role">Mestre Jedi</p>
+                    </div>
+                    <div class="card-content">
+                        <p class="description">
+                            Membro do Conselho Jedi que descobriu a verdadeira identidade de Palpatine. Especialista em
+                            Vaapad, forma mais agressiva de combate.
+                        </p>
+                        <div class="abilities">
+                            <h4>Habilidades:</h4>
+                            <span class="ability">Vaapad</span>
+                            <span class="ability">Força</span>
+                            <span class="ability">Liderança</span>
+                            <span class="ability">Combate</span>
+                        </div>
+                        <div class="lightsaber-info">
+                            <span>Sabre de Luz:</span>
+                            <span class="lightsaber purple">Roxo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yoda -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="flex">
+                            <span class="badge republic">República</span>
+                            <div class="lightsaber green">⚔️</div>
+                        </div>
+                        <h3 class="card-title">Yoda</h3>
+                        <p class="role">Grão-Mestre Jedi</p>
+                    </div>
+                    <div class="card-content">
+                        <p class="description">
+                            O mais poderoso Mestre Jedi, enfrentou diretamente o Imperador. Forçado ao exílio após a
+                            queda da Ordem Jedi.
+                        </p>
+                        <div class="abilities">
+                            <h4>Habilidades:</h4>
+                            <span class="ability">Força</span>
+                            <span class="ability">Sabedoria</span>
+                            <span class="ability">Combate</span>
+                            <span class="ability">Telecinese</span>
+                        </div>
+                        <div class="lightsaber-info">
+                            <span>Sabre de Luz:</span>
+                            <span class="lightsaber green">Verde</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-container">
+                <div class="quote-box">
+                    <h3 class="quote-title">"There is another Skywalker..."</h3>
+                    <p class="quote-subtitle">— Yoda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="text-center">
+                <div class="footer-header">
+                    <h3 class="footer-title">STAR WARS</h3>
+                    <p class="footer-subtitle">Episódio III - A Vingança dos Sith</p>
+                </div>
+
+                <div class="footer-legal">
+                    <p>© 2025 Jovanne Sousa Todos os direitos reservados.</p>
+                    <p class="note">Esta é uma landing page fan-made criada para fins educacionais.</p>
+                </div>
+
+                <div class="footer-icons">
+                    <div class="icons">
+                        <span>⭐</span>
+                        <span>🚀</span>
+                        <span>⚔️</span>
+                        <span>🌌</span>
+                        <span>⭐</span>
+                    </div>
+                    <p class="footer-quote">"May the Force be with you, always."</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./dist/scripts/app.js"></script>
 </body>
+
 </html>

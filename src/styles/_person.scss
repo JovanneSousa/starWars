@@ -1,0 +1,211 @@
+@use "variaveis";
+
+h4 {
+  color: variaveis.$corTexto1;
+}
+
+.characters-section {
+  padding: 5rem 1rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--muted-rgb), 0.2),
+    var(--background)
+  );
+
+  .container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0;
+
+    .intro {
+      text-align: center;
+      margin-bottom: 4rem;
+      animation: fade-in 1s ease-in-out forwards;
+
+      .title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        background: variaveis.$gradiente3;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .subtitle {
+        font-size: 1.25rem;
+        color: var(--muted-foreground);
+        max-width: 48rem;
+        margin: 0 auto;
+      }
+    }
+
+    .characters-grid {
+      display: grid;
+      gap: 2rem;
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .card {
+        background-color: variaveis.$background2;
+        backdrop-filter: blur(8px);
+        border: 1px solid variaveis.$corText;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        transition: all 0.3s;
+        text-align: left;
+
+        &:hover {
+          border-color: rgba(var(--primary-rgb), 0.5);
+          box-shadow: 0 8px 20px variaveis.$corBotao;
+        }
+
+        .card-header {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          .flex {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            color: variaveis.$branco;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            margin-bottom: 16px;
+            &.republic {
+              background: variaveis.$gradiente3;
+            }
+            &.empire {
+              background: variaveis.$gradiente;
+            }
+          }
+
+          .card-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: variaveis.$corTexto1;
+            white-space: nowrap;
+          }
+          .role {
+            font-weight: 600;
+            color: variaveis.$corBotao2;
+          }
+        }
+
+        .card-content {
+          margin-top: 1rem;
+
+          .description {
+            font-size: 16px;
+            margin-bottom: 1rem;
+          }
+
+          .abilities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+
+            h4 {
+              width: 100%;
+              font-weight: 600;
+              color: variaveis.$corTexto1;
+              margin-bottom: 0.5rem;
+            }
+
+            .ability {
+              padding: 0.25rem 0.5rem;
+              font-size: 0.75rem;
+              border: 1px solid variaveis.$corText;
+              border-radius: 0.675rem;
+              color: var(--muted-foreground);
+              transition: all 0.3s;
+
+              &:hover {
+                border-color: variaveis.$corBotao;
+                color: variaveis.$corBotao;
+              }
+            }
+          }
+
+          .lightsaber-info {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid variaveis.$corText;
+            padding-top: 1rem;
+
+            .lightsaber {
+              &.blue {
+                color: variaveis.$corBotao;
+              }
+              &.red {
+                color: variaveis.$corTexto2;
+              }
+              &.green {
+                color: #22c55e;
+              }
+              &.purple {
+                color: #a855f7;
+              }
+              &.blue-red {
+                color: variaveis.$corBotao;
+              }
+            }
+
+            span {
+              font-size: 0.875rem;
+              &.lightsaber {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .quote-container {
+      margin-top: 4rem;
+      text-align: center;
+
+      .quote-box {
+        display: inline-block;
+        background: variaveis.$footer;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        border: 1px solid variaveis.$corText;
+
+        .quote-title {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: variaveis.$corTexto1;
+          margin-bottom: 1rem;
+        }
+        .quote-subtitle {
+          color: rgba(var(--muted-rgb), 0.8);
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
